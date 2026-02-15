@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order | Sweet Crumbs Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="order-page">
+
+<nav>
+  <div class="nav-left">
+    <div class="logo">Sweet Crumbs</div>
+  </div>
+  <div class="nav-right">
+    <a href="home.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a href="order.html">🛒 <span id="cart-count">0</span></a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+</nav>
+
+<section class="section"> 
+  <h2>Your Order 🛒</h2>
+  <div id="cart" class="cart-box">
+    <p>No items added yet.</p>
+  </div>
+
+  <div class="order-buttons">
+    <button class="checkout-btn" onclick="checkout()">Checkout</button>
+    <button class="whatsapp-btn" onclick="sendWhatsApp()">Send via WhatsApp</button>
+    <button class="bill-btn" onclick="downloadBill()">Download Bill</button>
+  </div>
+</section>
+<footer>
+  <div class="footer-content">
+    <p>© 2026 Sweet Crumbs Bakery | Made with love 🍰</p>
+    <p>Islamabad, Pakistan | +92 300 1234567</p>
+  </div>
+</footer>
+<span id="cart-count">0</span>
+
+
+<script src="script.js"></script>
+</body>
+</html>

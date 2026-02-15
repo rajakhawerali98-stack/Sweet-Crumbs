@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu | Sweet Crumbs Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body  class="menu-page">
+
+
+  <nav>
+  <div class="nav-left">
+    <div class="logo">Sweet Crumbs</div>
+  </div>
+  <div class="nav-right">
+    <a href="home.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About</a>
+    <a href="order.html">🛒 <span id="cart-count">0</span></a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+</nav>
+
+
+<section class="section">
+  <h2>Our Menu 🍩</h2>
+  <div class="items">
+
+    <div class="card">
+      <img src="chocolate_cake.jpg" alt="Chocolate Cake">
+      <h3>Chocolate Cake</h3>
+      <p>Rs. 1800</p>
+      <button onclick="addToCart('Chocolate Cake',1800)">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="cupcakes.jpg" alt="Cupcakes Box">
+      <h3>Cupcakes Box</h3>
+      <p>Rs. 900</p>
+      <button onclick="addToCart('Cupcakes Box',900)">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="bread.jpg" alt="Fresh Bread">
+      <h3>Fresh Bread</h3>
+      <p>Rs. 250</p>
+      <button onclick="addToCart('Fresh Bread',250)">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="red_velvet.jpg" alt="Red Velvet Cake">
+      <h3>Red Velvet Cake</h3>
+      <p>Rs. 2000</p>
+      <button onclick="addToCart('Red Velvet Cake',2000)">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="vanilla_cake.jpg" alt="Vanilla Cake">
+      <h3>Vanilla Cake</h3>
+      <p>Rs. 800</p>
+      <button onclick="addToCart('Vanilla Cake',800)">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="macarons.jpg" alt="Macarons Box">
+      <h3>Macarons Box</h3>
+      <p>Rs. 1500</p>
+      <button onclick="addToCart('Macarons Box',1500)">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="croissants.jpg" alt="Croissants">
+      <h3>Croissants Box</h3>
+      <p>Rs. 400</p>
+      <button onclick="addToCart('Croissants',400)">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="cookies.jpg" alt="Cookies Pack">
+      <h3>Cookies Pack</h3>
+      <p>Rs. 1500</p>
+      <button onclick="addToCart('Cookies Pack',1500)">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="fruit_tart.jpg" alt="Fruit Tart">
+      <h3>Fruit Tart</h3>
+      <p>Rs. 1200</p>
+      <button onclick="addToCart('Fruit Tart',1200)">Add</button>
+    </div>
+
+    <div class="card">
+      <img src="cheesecake.jpg" alt="Cheesecake">
+      <h3>Cheesecake</h3>
+      <p>Rs. 1500</p>
+      <button onclick="addToCart('Cheesecake',1500)">Add</button>
+    </div>
+    <div class="card">
+      <img src="bentocake.jpg" alt="Bentocake">
+      <h3>BentoCake</h3>
+      <p>Rs. 1000</p>
+      <button onclick="addToCart('BentoCake',1000)">Add</button>
+    </div>
+    <div class="card">
+      <img src="matildacake.jpg" alt="Matildacake">
+      <h3>Matilda Cake</h3>
+      <p>Rs. 2000</p>
+      <button onclick="addToCart('Matilda Cake',2000)">Add</button>
+    </div><div class="card">
+      <img src="creampuffs.jpg" alt="Creampuffs">
+      <h3>Cream Puffs</h3>
+      <p>Rs. 400</p>
+      <button onclick="addToCart('Cream Puffs',400)">Add</button>
+    </div><div class="card">
+      <img src="blackforest.jpg" alt="Blackforestcake">
+      <h3>Black Forest Cake</h3>
+      <p>Rs. 1800</p>
+      <button onclick="addToCart('Black Forest Cake',1800)">Add</button>
+    </div><div class="card">
+      <img src="buttercake.jpg" alt="Buttercake">
+      <h3>Butter cake</h3>
+      <p>Rs. 500</p>
+      <button onclick="addToCart('Butter Cake',500)">Add</button>
+    </div><div class="card">
+      <img src="spongecake.jpg" alt="Spongecake">
+      <h3>Sponge Cake</h3>
+      <p>Rs. 400</p>
+      <button onclick="addToCart('Sponge Cake',400)">Add</button>
+    </div><div class="card">
+      <img src="fudgybrownies.jpg" alt="Fudgybrownies">
+      <h3>Fudgy Brownies (6)</h3>
+      <p>Rs. 1500</p>
+      <button onclick="addToCart('Fudgy Brownies',1500)">Add</button>
+    </div><div class="card">
+      <img src="chocchip Brownies.jpg" alt="Chocchipbrownies">
+      <h3>ChocChip Brownies (6)</h3>
+      <p>Rs. 1500</p>
+      <button onclick="addToCart('ChocChip Brownies',1500)">Add</button>
+    </div>
+  </div>
+
+  <a href="order.html" class="btn">Go to Order Page</a>
+</section>
+<div id="popup" class="popup">Item added to cart!</div>
+<footer>
+  <div class="footer-content">
+    <p>© 2026 Sweet Crumbs Bakery | Made with love 🍰</p>
+    <p>Islamabad, Pakistan | +92 300 1234567</p>
+  </div>
+</footer>
+<span id="cart-count">0</span>
+
+<script src="script.js"></script>
+</body>
+</html>
+
